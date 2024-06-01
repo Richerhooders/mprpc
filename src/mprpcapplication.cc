@@ -23,12 +23,10 @@ void MprpcApplication::Init(int argc,char** argv) {
             break;
         
         case '?':
-            std::cout << "invalid args" << std::endl;
             ShowArgsHelp();
             exit(EXIT_FAILURE);
         
         case ':':
-            std::cout << "need <configfile>" << std::endl;
             ShowArgsHelp();
             exit(EXIT_FAILURE);
 
