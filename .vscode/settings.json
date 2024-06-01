@@ -1,5 +1,6 @@
 {
     "files.associations": {
         "*.inc": "cpp"
-    }
+    },
+    "cmake.options.statusBarVisibility": "visible"
 }
