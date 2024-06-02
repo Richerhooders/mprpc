@@ -8,7 +8,8 @@ public:
     //负责解析加载的配置文件
     void LoadConfigFile(const char* config_file);
     //查询配置信息
-    std::string Load(std::string &key);
+    std::string Load(const std::string &key);
 private:
+    void Trim(std::string &src_buf);
     std::unordered_map<std::string,std::string> m_configMap;
 };
