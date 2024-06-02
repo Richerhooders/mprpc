@@ -1,7 +1,6 @@
-src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o: \
- /home/rodgergraser7u/projects/mprpc/src/mprpcapplication.cc \
+src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o: \
+ /home/rodgergraser7u/projects/mprpc/src/mprpcconfig.cc \
  /usr/include/stdc-predef.h \
- /home/rodgergraser7u/projects/mprpc/src/include/mprpcapplication.h \
  /home/rodgergraser7u/projects/mprpc/src/include/mprpcconfig.h \
  /usr/include/c++/9/unordered_map /usr/include/c++/9/type_traits \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
@@ -143,9 +142,4 @@ src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o: \
  /usr/include/c++/9/bits/locale_facets.tcc \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
- /usr/include/c++/9/bits/istream.tcc /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h
+ /usr/include/c++/9/bits/istream.tcc
