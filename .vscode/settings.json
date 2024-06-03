@@ -75,7 +75,8 @@
         "typeinfo": "cpp",
         "valarray": "cpp",
         "variant": "cpp",
-        "bit": "cpp"
+        "bit": "cpp",
+        "source_location": "cpp"
     },
     "cmake.options.statusBarVisibility": "visible"
 }

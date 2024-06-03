@@ -177,4 +177,115 @@ src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: \
  /usr/include/c++/9/bits/hashtable.h \
  /usr/include/c++/9/bits/hashtable_policy.h \
  /usr/include/c++/9/bits/unordered_map.h /usr/include/c++/9/unordered_set \
- /usr/include/c++/9/bits/unordered_set.h
+ /usr/include/c++/9/bits/unordered_set.h \
+ /usr/include/muduo/net/EventLoop.h /usr/include/c++/9/atomic \
+ /usr/include/c++/9/functional /usr/include/c++/9/bits/std_function.h \
+ /usr/local/include/boost/any.hpp /usr/local/include/boost/config.hpp \
+ /usr/local/include/boost/config/user.hpp \
+ /usr/local/include/boost/config/detail/select_compiler_config.hpp \
+ /usr/local/include/boost/config/compiler/gcc.hpp \
+ /usr/local/include/boost/config/detail/select_stdlib_config.hpp \
+ /usr/include/c++/9/version \
+ /usr/local/include/boost/config/stdlib/libstdcpp3.hpp \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/local/include/boost/config/detail/select_platform_config.hpp \
+ /usr/local/include/boost/config/platform/linux.hpp \
+ /usr/local/include/boost/config/detail/posix_features.hpp \
+ /usr/local/include/boost/config/detail/suffix.hpp \
+ /usr/local/include/boost/config/helper_macros.hpp \
+ /usr/local/include/boost/config/detail/cxx_composite.hpp \
+ /usr/local/include/boost/any/bad_any_cast.hpp \
+ /usr/local/include/boost/any/fwd.hpp \
+ /usr/local/include/boost/any/detail/placeholder.hpp \
+ /usr/local/include/boost/type_index.hpp \
+ /usr/local/include/boost/type_index/stl_type_index.hpp \
+ /usr/local/include/boost/type_index/type_index_facade.hpp \
+ /usr/local/include/boost/container_hash/hash_fwd.hpp \
+ /usr/local/include/boost/throw_exception.hpp \
+ /usr/local/include/boost/exception/exception.hpp \
+ /usr/local/include/boost/assert/source_location.hpp \
+ /usr/local/include/boost/cstdint.hpp \
+ /usr/local/include/boost/config/workaround.hpp \
+ /usr/local/include/boost/core/demangle.hpp /usr/include/c++/9/cxxabi.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/cxxabi_tweaks.h \
+ /usr/include/muduo/base/Mutex.h /usr/include/muduo/base/CurrentThread.h \
+ /usr/include/muduo/base/Types.h /usr/include/muduo/base/noncopyable.h \
+ /usr/include/muduo/base/Timestamp.h /usr/include/muduo/base/copyable.h \
+ /usr/local/include/boost/operators.hpp /usr/include/c++/9/iterator \
+ /usr/include/c++/9/bits/stream_iterator.h \
+ /usr/local/include/boost/detail/workaround.hpp \
+ /usr/local/include/boost/core/addressof.hpp \
+ /usr/include/muduo/net/Callbacks.h /usr/include/muduo/net/TimerId.h \
+ /usr/include/muduo/net/TcpServer.h /usr/include/muduo/base/Atomic.h \
+ /usr/include/muduo/net/TcpConnection.h \
+ /usr/include/muduo/base/StringPiece.h /usr/include/muduo/net/Buffer.h \
+ /usr/include/muduo/net/Endian.h /usr/include/muduo/net/InetAddress.h \
+ /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/x86_64-linux-gnu/bits/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+ /usr/include/x86_64-linux-gnu/bits/in.h \
+ /usr/local/include/google/protobuf/descriptor.h \
+ /usr/local/include/google/protobuf/stubs/logging.h \
+ /usr/local/include/google/protobuf/stubs/status.h \
+ /usr/local/include/google/protobuf/stubs/mutex.h \
+ /usr/include/c++/9/mutex /usr/include/c++/9/chrono \
+ /usr/include/c++/9/ratio /usr/include/c++/9/ctime \
+ /usr/include/c++/9/bits/parse_numbers.h \
+ /usr/include/c++/9/bits/std_mutex.h \
+ /usr/include/c++/9/bits/unique_lock.h \
+ /usr/local/include/google/protobuf/stubs/once.h \
+ /usr/local/include/google/protobuf/port.h \
+ /home/rodgergraser7u/projects/mprpc/src/include/mprpcapplication.h \
+ /home/rodgergraser7u/projects/mprpc/src/include/mprpcconfig.h \
+ /home/rodgergraser7u/projects/mprpc/src/rpcheader.pb.h \
+ /usr/local/include/google/protobuf/io/coded_stream.h \
+ /usr/include/c++/9/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /usr/local/include/google/protobuf/stubs/strutil.h \
+ /usr/local/include/google/protobuf/arena.h \
+ /usr/local/include/google/protobuf/arena_impl.h \
+ /usr/local/include/google/protobuf/arenaz_sampler.h \
+ /usr/local/include/google/protobuf/arenastring.h \
+ /usr/local/include/google/protobuf/explicitly_constructed.h \
+ /usr/local/include/google/protobuf/generated_message_util.h \
+ /usr/local/include/google/protobuf/any.h \
+ /usr/local/include/google/protobuf/message_lite.h \
+ /usr/local/include/google/protobuf/metadata_lite.h \
+ /usr/local/include/google/protobuf/has_bits.h \
+ /usr/local/include/google/protobuf/implicit_weak_message.h \
+ /usr/local/include/google/protobuf/repeated_field.h \
+ /usr/local/include/google/protobuf/repeated_ptr_field.h \
+ /usr/local/include/google/protobuf/wire_format_lite.h \
+ /usr/local/include/google/protobuf/stubs/casts.h \
+ /usr/local/include/google/protobuf/generated_message_reflection.h \
+ /usr/local/include/google/protobuf/generated_enum_reflection.h \
+ /usr/local/include/google/protobuf/generated_enum_util.h \
+ /usr/local/include/google/protobuf/unknown_field_set.h \
+ /usr/local/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
+ /usr/local/include/google/protobuf/io/zero_copy_stream.h \
+ /usr/local/include/google/protobuf/stubs/stl_util.h \
+ /usr/local/include/google/protobuf/parse_context.h \
+ /usr/local/include/google/protobuf/inlined_string_field.h \
+ /usr/local/include/google/protobuf/message.h \
+ /usr/local/include/google/protobuf/map.h \
+ /usr/local/include/google/protobuf/map_type_handler.h \
+ /usr/local/include/google/protobuf/extension_set.h \
+ /usr/include/c++/9/cassert

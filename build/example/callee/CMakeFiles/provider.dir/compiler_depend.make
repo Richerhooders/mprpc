@@ -300,6 +300,8 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/socket.h \
+  /usr/include/asm-generic/sockios.h \
   /usr/include/assert.h \
   /usr/include/byteswap.h \
   /usr/include/c++/9/algorithm \
@@ -401,6 +403,7 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
   /usr/include/c++/9/ctime \
   /usr/include/c++/9/cwchar \
   /usr/include/c++/9/cwctype \
+  /usr/include/c++/9/cxxabi.h \
   /usr/include/c++/9/debug/assertions.h \
   /usr/include/c++/9/debug/debug.h \
   /usr/include/c++/9/exception \
@@ -439,6 +442,7 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
   /usr/include/c++/9/unordered_set \
   /usr/include/c++/9/utility \
   /usr/include/c++/9/vector \
+  /usr/include/c++/9/version \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -447,6 +451,23 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
+  /usr/include/muduo/base/Atomic.h \
+  /usr/include/muduo/base/CurrentThread.h \
+  /usr/include/muduo/base/Mutex.h \
+  /usr/include/muduo/base/StringPiece.h \
+  /usr/include/muduo/base/Timestamp.h \
+  /usr/include/muduo/base/Types.h \
+  /usr/include/muduo/base/copyable.h \
+  /usr/include/muduo/base/noncopyable.h \
+  /usr/include/muduo/net/Buffer.h \
+  /usr/include/muduo/net/Callbacks.h \
+  /usr/include/muduo/net/Endian.h \
+  /usr/include/muduo/net/EventLoop.h \
+  /usr/include/muduo/net/InetAddress.h \
+  /usr/include/muduo/net/TcpConnection.h \
+  /usr/include/muduo/net/TcpServer.h \
+  /usr/include/muduo/net/TimerId.h \
+  /usr/include/netinet/in.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -456,17 +477,25 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/time.h \
+  /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/socket.h \
+  /usr/include/x86_64-linux-gnu/asm/sockios.h \
   /usr/include/x86_64-linux-gnu/bits/_G_config.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap-16.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/in.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/libio.h \
   /usr/include/x86_64-linux-gnu/bits/local_lim.h \
@@ -474,11 +503,15 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
   /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+  /usr/include/x86_64-linux-gnu/bits/socket.h \
+  /usr/include/x86_64-linux-gnu/bits/socket_type.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
@@ -499,7 +532,9 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
@@ -522,6 +557,7 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
   /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/cxxabi_tweaks.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h \
@@ -530,6 +566,7 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/socket.h \
   /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h \
@@ -537,6 +574,35 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h \
+  /usr/local/include/boost/any.hpp \
+  /usr/local/include/boost/any/bad_any_cast.hpp \
+  /usr/local/include/boost/any/detail/placeholder.hpp \
+  /usr/local/include/boost/any/fwd.hpp \
+  /usr/local/include/boost/assert/source_location.hpp \
+  /usr/local/include/boost/config.hpp \
+  /usr/local/include/boost/config/compiler/gcc.hpp \
+  /usr/local/include/boost/config/detail/cxx_composite.hpp \
+  /usr/local/include/boost/config/detail/posix_features.hpp \
+  /usr/local/include/boost/config/detail/select_compiler_config.hpp \
+  /usr/local/include/boost/config/detail/select_platform_config.hpp \
+  /usr/local/include/boost/config/detail/select_stdlib_config.hpp \
+  /usr/local/include/boost/config/detail/suffix.hpp \
+  /usr/local/include/boost/config/helper_macros.hpp \
+  /usr/local/include/boost/config/platform/linux.hpp \
+  /usr/local/include/boost/config/stdlib/libstdcpp3.hpp \
+  /usr/local/include/boost/config/user.hpp \
+  /usr/local/include/boost/config/workaround.hpp \
+  /usr/local/include/boost/container_hash/hash_fwd.hpp \
+  /usr/local/include/boost/core/addressof.hpp \
+  /usr/local/include/boost/core/demangle.hpp \
+  /usr/local/include/boost/cstdint.hpp \
+  /usr/local/include/boost/detail/workaround.hpp \
+  /usr/local/include/boost/exception/exception.hpp \
+  /usr/local/include/boost/operators.hpp \
+  /usr/local/include/boost/throw_exception.hpp \
+  /usr/local/include/boost/type_index.hpp \
+  /usr/local/include/boost/type_index/stl_type_index.hpp \
+  /usr/local/include/boost/type_index/type_index_facade.hpp \
   /usr/local/include/google/protobuf/any.h \
   /usr/local/include/google/protobuf/arena.h \
   /usr/local/include/google/protobuf/arena_impl.h \
@@ -585,9 +651,97 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
   /usr/local/include/google/protobuf/wire_format_lite.h
 
 
+/usr/local/include/boost/type_index/type_index_facade.hpp:
+
+/usr/local/include/boost/operators.hpp:
+
+/usr/local/include/boost/exception/exception.hpp:
+
+/usr/local/include/boost/detail/workaround.hpp:
+
+/usr/local/include/boost/core/demangle.hpp:
+
+/usr/local/include/boost/core/addressof.hpp:
+
+/usr/local/include/boost/config/stdlib/libstdcpp3.hpp:
+
+/usr/local/include/boost/container_hash/hash_fwd.hpp:
+
+/usr/local/include/boost/config/platform/linux.hpp:
+
+/usr/local/include/boost/config/helper_macros.hpp:
+
+/usr/local/include/boost/config/detail/suffix.hpp:
+
+/usr/local/include/boost/config/detail/select_platform_config.hpp:
+
+/usr/local/include/boost/config/detail/select_compiler_config.hpp:
+
+/usr/local/include/boost/config/detail/posix_features.hpp:
+
+/usr/local/include/boost/config/detail/cxx_composite.hpp:
+
+/usr/local/include/boost/config/compiler/gcc.hpp:
+
+/usr/local/include/boost/any/fwd.hpp:
+
+/usr/local/include/boost/any/detail/placeholder.hpp:
+
+/usr/local/include/boost/any.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/cxxabi_tweaks.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket.h:
+
+/usr/include/x86_64-linux-gnu/bits/sockaddr.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/unistd.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/muduo/net/TcpConnection.h:
+
+/usr/local/include/boost/any/bad_any_cast.hpp:
+
+/usr/include/muduo/net/InetAddress.h:
+
+/usr/local/include/boost/type_index.hpp:
+
+/usr/include/muduo/net/Endian.h:
+
+/usr/include/muduo/net/Buffer.h:
+
+/usr/include/muduo/net/Callbacks.h:
+
+/usr/include/muduo/base/noncopyable.h:
+
+/usr/include/muduo/base/Types.h:
+
+/usr/include/muduo/base/Timestamp.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/muduo/base/StringPiece.h:
+
+/usr/include/muduo/base/CurrentThread.h:
+
+/usr/include/muduo/base/Atomic.h:
+
+/usr/include/c++/9/cxxabi.h:
+
+/usr/include/asm-generic/sockios.h:
+
 /home/rodgergraser7u/projects/mprpc/src/include/rpcprovider.h:
 
 /home/rodgergraser7u/projects/mprpc/src/include/mprpcconfig.h:
+
+/usr/include/x86_64-linux-gnu/bits/in.h:
 
 /usr/local/include/google/protobuf/wire_format.h:
 
@@ -605,9 +759,17 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
 
 /usr/local/include/google/protobuf/stubs/hash.h:
 
+/usr/include/x86_64-linux-gnu/bits/socket_type.h:
+
 /usr/local/include/google/protobuf/repeated_field.h:
 
+/usr/include/asm-generic/socket.h:
+
 /usr/local/include/google/protobuf/reflection_ops.h:
+
+/usr/include/x86_64-linux-gnu/sys/socket.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
 
 /usr/local/include/google/protobuf/port_undef.inc:
 
@@ -635,13 +797,19 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
 
 /usr/include/c++/9/istream:
 
+/usr/include/x86_64-linux-gnu/asm/socket.h:
+
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/c++/9/initializer_list:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
+/usr/local/include/boost/config/workaround.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/c++/9/version:
 
 /usr/include/c++/9/ext/type_traits.h:
 
@@ -703,6 +871,8 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
+/usr/local/include/boost/cstdint.hpp:
+
 /usr/include/c++/9/iosfwd:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
@@ -745,11 +915,15 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
 
 /usr/local/include/google/protobuf/arena_impl.h:
 
+/usr/local/include/boost/config/user.hpp:
+
 /usr/include/c++/9/ext/concurrence.h:
 
 /usr/include/c++/9/bits/stl_iterator_base_types.h:
 
 /usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/asm/sockios.h:
 
 /usr/local/include/google/protobuf/stubs/casts.h:
 
@@ -767,6 +941,8 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
 
 /usr/include/c++/9/bits/concept_check.h:
 
+/usr/local/include/boost/throw_exception.hpp:
+
 /usr/include/c++/9/bits/allocator.h:
 
 /usr/include/c++/9/bits/postypes.h:
@@ -776,6 +952,8 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
 /usr/include/c++/9/cstddef:
 
 /usr/include/c++/9/bits/basic_string.tcc:
+
+/usr/local/include/boost/assert/source_location.hpp:
 
 /usr/include/c++/9/utility:
 
@@ -790,6 +968,8 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
 /usr/include/c++/9/cerrno:
 
 /usr/include/c++/9/debug/assertions.h:
+
+/usr/local/include/boost/config/detail/select_stdlib_config.hpp:
 
 /usr/local/include/google/protobuf/wire_format_lite.h:
 
@@ -869,6 +1049,8 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
 
 /usr/include/c++/9/bits/basic_ios.tcc:
 
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
 /usr/include/c++/9/bits/shared_ptr_base.h:
 
 /usr/include/assert.h:
@@ -890,6 +1072,8 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
 /usr/include/c++/9/bits/functional_hash.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/local/include/boost/config.hpp:
 
 /home/rodgergraser7u/projects/mprpc/example/user.pb.h:
 
@@ -967,6 +1151,8 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
 
 /usr/include/c++/9/bits/parse_numbers.h:
 
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/include/c++/9/bits/hashtable.h:
@@ -976,6 +1162,8 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
 /usr/include/c++/9/ratio:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/include/muduo/net/TcpServer.h:
 
 /usr/include/c++/9/new:
 
@@ -1004,6 +1192,8 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
 /usr/include/c++/9/bits/stl_function.h:
 
 /usr/include/c++/9/tuple:
+
+/usr/include/muduo/net/TimerId.h:
 
 /usr/include/c++/9/bits/atomic_lockfree_defines.h:
 
@@ -1059,6 +1249,8 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
 
 /usr/include/x86_64-linux-gnu/bits/_G_config.h:
 
+/usr/local/include/boost/type_index/stl_type_index.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/c++/9/bits/memoryfwd.h:
@@ -1103,11 +1295,15 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
+/usr/include/muduo/net/EventLoop.h:
+
 /usr/include/x86_64-linux-gnu/bits/byteswap-16.h:
 
 /usr/local/include/google/protobuf/has_bits.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/muduo/base/Mutex.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
@@ -1156,6 +1352,8 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: /home/rodgergraser7u/pr
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h:
+
+/usr/include/muduo/base/copyable.h:
 
 /usr/include/c++/9/string:
 
