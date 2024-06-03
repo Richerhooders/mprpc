@@ -107,4 +107,39 @@ void RpcProvider::OnMessage(const muduo::net::TcpConnectionPtr &conn,muduo::net:
     std::cout << "method_name" << method_name << std::endl;
     std::cout << "args_str" << args_str << std::endl;
     std::cout << "------------------------------------------------" << std::endl; 
+
+    //获取service对象和method对象
+    auto it = m_serviceInfoMap.find(service_name);
+    if(it == m_serviceInfoMap.end()) {
+        std::cout << service_name <<  "is not exist !" << std::endl;
+        return;
+    }
+
+    auto mit = it -> second.m_methodMap.find(method_name);
+    if(mit == it -> second.m_methodMap.end()) {
+        std::cout << service_name << ":" << method_name << " is not exist" << std::endl;
+        return;
+    }
+    google::protobuf::Service *service = it -> second.m_service;//获取service对象 new UserService
+    const google::protobuf::MethodDescriptor *method = mit -> second; //获取method对象 Login
+
+    //生成Rpc方法调用的请求requeset和响应response参数
+    google::protobuf::Message *request = service -> GetRequestPrototype(method).New();//这里是通过参数service_name构成的对象调用的，而不是通过基类service调用的
+    if(!request ->ParseFromString(args_str)) {
+        std::cout << "request parser error ! content:" << args_str << std::endl;
+        return;
+    }
+    google::protobuf::Message *reponse = service -> GetResponsePrototype(method).New();
+
+    //给下面的method方法的调用，绑定一个Closure的回调函数
+    google::protobuf::NewCallback()
+
+    //在框架上根据远端rpc请求，调用当前rpc节点上发布的方法
+    //new UserService().Login(constroller,request,response,done)
+    service -> CallMethod(method,nullptr,request,reponse,)
+
+}
+
+void RpcProvider::SendRpcResponse(const muduo::net::TcpConnectionPtr&,google::protobuf::Message*) {
+
 }
