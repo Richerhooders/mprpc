@@ -8,3 +8,6 @@
 /home/rodgergraser7u/projects/mprpc/build/example/callee/CMakeFiles/provider.dir
 /home/rodgergraser7u/projects/mprpc/build/example/callee/CMakeFiles/edit_cache.dir
 /home/rodgergraser7u/projects/mprpc/build/example/callee/CMakeFiles/rebuild_cache.dir
+/home/rodgergraser7u/projects/mprpc/build/example/caller/CMakeFiles/consumer.dir
+/home/rodgergraser7u/projects/mprpc/build/example/caller/CMakeFiles/edit_cache.dir
+/home/rodgergraser7u/projects/mprpc/build/example/caller/CMakeFiles/rebuild_cache.dir
