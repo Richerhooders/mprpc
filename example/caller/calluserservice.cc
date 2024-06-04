@@ -21,9 +21,9 @@ int main(int argc,char** argv) {
 
     //一次rpc调用完成，读返回的结果
     if(response.result().errcode() == 0) {
-        std::cout << "rpc login response:" << response.success() << std::endl;
+        std::cout << "Rpc Login Response Success:" << response.success() << std::endl;
     }else {
-        std::cout << "rpc login response error:" << response.result().errmsg() << std::endl; 
+        std::cout << "Rpc Login Response Error:" << response.result().errmsg() << std::endl; 
     }
 
     return 0;
