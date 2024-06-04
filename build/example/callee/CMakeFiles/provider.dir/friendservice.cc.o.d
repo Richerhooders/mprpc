@@ -230,6 +230,8 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: \
  /usr/include/c++/9/cassert /usr/local/include/google/protobuf/service.h \
  /home/rodgergraser7u/projects/mprpc/src/include/mprpcapplication.h \
  /home/rodgergraser7u/projects/mprpc/src/include/mprpcconfig.h \
+ /home/rodgergraser7u/projects/mprpc/src/include/mprpcchannel.h \
+ /home/rodgergraser7u/projects/mprpc/src/include/mprpccontroller.h \
  /home/rodgergraser7u/projects/mprpc/src/include/rpcprovider.h \
  /usr/include/muduo/net/EventLoop.h /usr/local/include/boost/any.hpp \
  /usr/local/include/boost/config.hpp \

@@ -244,6 +244,7 @@ src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /home/rodgergraser7u/projects/mprpc/src/include/mprpcapplication.h \
  /home/rodgergraser7u/projects/mprpc/src/include/mprpcconfig.h \
+ /home/rodgergraser7u/projects/mprpc/src/include/mprpccontroller.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \

@@ -248,8 +248,17 @@ src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: \
  /usr/local/include/google/protobuf/port.h \
  /home/rodgergraser7u/projects/mprpc/src/include/mprpcapplication.h \
  /home/rodgergraser7u/projects/mprpc/src/include/mprpcconfig.h \
- /home/rodgergraser7u/projects/mprpc/src/include/rpcheader.pb.h \
- /usr/local/include/google/protobuf/io/coded_stream.h \
+ /home/rodgergraser7u/projects/mprpc/src/include/mprpcchannel.h \
+ /usr/local/include/google/protobuf/message.h \
+ /usr/local/include/google/protobuf/stubs/casts.h \
+ /usr/local/include/google/protobuf/arena.h \
+ /usr/local/include/google/protobuf/arena_impl.h \
+ /usr/local/include/google/protobuf/arenaz_sampler.h \
+ /usr/local/include/google/protobuf/generated_message_reflection.h \
+ /usr/local/include/google/protobuf/generated_enum_reflection.h \
+ /usr/local/include/google/protobuf/stubs/strutil.h \
+ /usr/local/include/google/protobuf/generated_enum_util.h \
+ /usr/local/include/google/protobuf/message_lite.h \
  /usr/include/c++/9/climits \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h \
@@ -259,33 +268,26 @@ src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /usr/local/include/google/protobuf/stubs/strutil.h \
- /usr/local/include/google/protobuf/arena.h \
- /usr/local/include/google/protobuf/arena_impl.h \
- /usr/local/include/google/protobuf/arenaz_sampler.h \
- /usr/local/include/google/protobuf/arenastring.h \
+ /usr/local/include/google/protobuf/io/coded_stream.h \
  /usr/local/include/google/protobuf/explicitly_constructed.h \
- /usr/local/include/google/protobuf/generated_message_util.h \
- /usr/local/include/google/protobuf/any.h \
- /usr/local/include/google/protobuf/message_lite.h \
  /usr/local/include/google/protobuf/metadata_lite.h \
- /usr/local/include/google/protobuf/has_bits.h \
- /usr/local/include/google/protobuf/implicit_weak_message.h \
- /usr/local/include/google/protobuf/repeated_field.h \
- /usr/local/include/google/protobuf/repeated_ptr_field.h \
- /usr/local/include/google/protobuf/wire_format_lite.h \
- /usr/local/include/google/protobuf/stubs/casts.h \
- /usr/local/include/google/protobuf/generated_message_reflection.h \
- /usr/local/include/google/protobuf/generated_enum_reflection.h \
- /usr/local/include/google/protobuf/generated_enum_util.h \
  /usr/local/include/google/protobuf/unknown_field_set.h \
  /usr/local/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
  /usr/local/include/google/protobuf/io/zero_copy_stream.h \
  /usr/local/include/google/protobuf/stubs/stl_util.h \
  /usr/local/include/google/protobuf/parse_context.h \
+ /usr/local/include/google/protobuf/arenastring.h \
+ /usr/local/include/google/protobuf/implicit_weak_message.h \
+ /usr/local/include/google/protobuf/repeated_field.h \
+ /usr/local/include/google/protobuf/repeated_ptr_field.h \
  /usr/local/include/google/protobuf/inlined_string_field.h \
- /usr/local/include/google/protobuf/message.h \
+ /usr/local/include/google/protobuf/wire_format_lite.h \
+ /usr/local/include/google/protobuf/generated_message_util.h \
+ /usr/local/include/google/protobuf/any.h \
+ /usr/local/include/google/protobuf/has_bits.h \
  /usr/local/include/google/protobuf/map.h \
  /usr/local/include/google/protobuf/map_type_handler.h \
+ /home/rodgergraser7u/projects/mprpc/src/include/mprpccontroller.h \
+ /home/rodgergraser7u/projects/mprpc/src/include/rpcheader.pb.h \
  /usr/local/include/google/protobuf/extension_set.h \
  /usr/include/c++/9/cassert
