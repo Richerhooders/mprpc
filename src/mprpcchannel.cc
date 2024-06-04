@@ -26,7 +26,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     if(request -> SerializeToString(&args_str)) { //requeset只含有参数，见caller/calluserservice.cc
         args_size = args_str.size();
     }else{
-        std::cout << "Serialize request error!" << std::endl;
+        controller -> SetFailed("Serialize request error!");
         return;
     }
 
@@ -40,6 +40,9 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     std::string rpc_header_str;
     if(rpcHeader.SerializeToString(&rpc_header_str)) {
         header_size = rpc_header_str.size();
+    }else{
+        controller -> SetFailed("Serialize rpc header error!");
+        return;
     }
 
     //组织待发送的rpc请求的字符串
@@ -60,8 +63,10 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     //使用tcp编程完成rpc方法的远程调用
     int clientfd = socket(AF_INET,SOCK_STREAM,0);
     if(clientfd == -1) {
-        std::cout << "create socket error errno:" << errno << std::endl;
-        exit(EXIT_FAILURE);
+        char errtxt[512] = {0};
+        sprintf(errtxt,"create socket error! errno:%d",errno);
+        controller -> SetFailed(errtxt);
+        return;
     }
 
     //读取配置文件信息
@@ -75,15 +80,19 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     
     //连接rpc服务的节点
     if(connect(clientfd,(struct sockaddr*) &server_addr,sizeof(server_addr)) == -1) {
-        std::cout << "connect error errno:" << errno << std::endl;
         close(clientfd);
-        exit(EXIT_FAILURE);
+        char errtxt[512] = {0};
+        sprintf(errtxt,"connect error errno:%d",errno);
+        controller -> SetFailed(errtxt);
+        return;
     }
 
     //发送rpc请求
     if(send(clientfd,send_rpc_str.c_str(),send_rpc_str.size(),0) == -1) {
-        std::cout << "send error errno" << errno << std::endl;
         close(clientfd);
+        char errtxt[512] = {0};
+        sprintf(errtxt,"send error errno:%d",errno);
+        controller -> SetFailed(errtxt);
         return;
     }
 
@@ -91,8 +100,10 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     char recv_buf[1024] = {0};
     int recv_size = 0;
     if((recv_size = recv(clientfd,recv_buf,1024,0)) == -1) {
-        std::cout << "recv error! errno:" << errno << std::endl;
         close(clientfd);
+        char errtxt[512] = {0};
+        sprintf(errtxt,"recv error! errno:%d",errno);
+        controller -> SetFailed(errtxt);
         return;
     }
 
@@ -100,8 +111,10 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     // std::string response_str(recv_buf,0,recv_size);//出现问题，recv_buf中遇到/0后面的数据就存不下来了，导致反序列化失败。
     // if(!response->ParseFromString(response_str)) {
     if(!response -> ParseFromArray(recv_buf,recv_size)) {
-        std::cout << "parse error! response_str:" << recv_buf << std::endl;
         close(clientfd);
+        char errtxt[512] = {0};
+        sprintf(errtxt,"parse error! response_str:%s",recv_buf);
+        controller -> SetFailed(errtxt);
         return;
     }
 
