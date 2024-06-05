@@ -294,6 +294,8 @@ example/callee/CMakeFiles/provider.dir/__/friend.pb.cc.o: /home/rodgergraser7u/p
 
 example/callee/CMakeFiles/provider.dir/friendservice.cc.o: /home/rodgergraser7u/projects/mprpc/example/callee/friendservice.cc \
   /home/rodgergraser7u/projects/mprpc/example/friend.pb.h \
+  /home/rodgergraser7u/projects/mprpc/src/include/lockqueue.h \
+  /home/rodgergraser7u/projects/mprpc/src/include/logger.h \
   /home/rodgergraser7u/projects/mprpc/src/include/mprpcapplication.h \
   /home/rodgergraser7u/projects/mprpc/src/include/mprpcchannel.h \
   /home/rodgergraser7u/projects/mprpc/src/include/mprpcconfig.h \
@@ -326,6 +328,7 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: /home/rodgergraser7u/
   /usr/include/c++/9/bits/cpp_type_traits.h \
   /usr/include/c++/9/bits/cxxabi_forced.h \
   /usr/include/c++/9/bits/cxxabi_init_exception.h \
+  /usr/include/c++/9/bits/deque.tcc \
   /usr/include/c++/9/bits/erase_if.h \
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
@@ -364,6 +367,7 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: /home/rodgergraser7u/
   /usr/include/c++/9/bits/stl_algobase.h \
   /usr/include/c++/9/bits/stl_bvector.h \
   /usr/include/c++/9/bits/stl_construct.h \
+  /usr/include/c++/9/bits/stl_deque.h \
   /usr/include/c++/9/bits/stl_function.h \
   /usr/include/c++/9/bits/stl_heap.h \
   /usr/include/c++/9/bits/stl_iterator.h \
@@ -373,6 +377,7 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: /home/rodgergraser7u/
   /usr/include/c++/9/bits/stl_multimap.h \
   /usr/include/c++/9/bits/stl_multiset.h \
   /usr/include/c++/9/bits/stl_pair.h \
+  /usr/include/c++/9/bits/stl_queue.h \
   /usr/include/c++/9/bits/stl_raw_storage_iter.h \
   /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_set.h \
@@ -397,6 +402,7 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: /home/rodgergraser7u/
   /usr/include/c++/9/chrono \
   /usr/include/c++/9/climits \
   /usr/include/c++/9/clocale \
+  /usr/include/c++/9/condition_variable \
   /usr/include/c++/9/cstddef \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
@@ -408,6 +414,7 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: /home/rodgergraser7u/
   /usr/include/c++/9/cxxabi.h \
   /usr/include/c++/9/debug/assertions.h \
   /usr/include/c++/9/debug/debug.h \
+  /usr/include/c++/9/deque \
   /usr/include/c++/9/exception \
   /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
@@ -430,6 +437,7 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: /home/rodgergraser7u/
   /usr/include/c++/9/mutex \
   /usr/include/c++/9/new \
   /usr/include/c++/9/ostream \
+  /usr/include/c++/9/queue \
   /usr/include/c++/9/ratio \
   /usr/include/c++/9/set \
   /usr/include/c++/9/stdexcept \
@@ -437,6 +445,7 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: /home/rodgergraser7u/
   /usr/include/c++/9/streambuf \
   /usr/include/c++/9/string \
   /usr/include/c++/9/system_error \
+  /usr/include/c++/9/thread \
   /usr/include/c++/9/tuple \
   /usr/include/c++/9/type_traits \
   /usr/include/c++/9/typeinfo \
@@ -731,6 +740,12 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: /home/rodgergraser7u/
 
 /usr/include/muduo/base/Atomic.h:
 
+/usr/include/c++/9/queue:
+
+/usr/include/c++/9/condition_variable:
+
+/usr/include/c++/9/bits/deque.tcc:
+
 /usr/include/asm-generic/sockios.h:
 
 /home/rodgergraser7u/projects/mprpc/src/include/rpcprovider.h:
@@ -740,6 +755,10 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: /home/rodgergraser7u/
 /home/rodgergraser7u/projects/mprpc/src/include/mprpccontroller.h:
 
 /home/rodgergraser7u/projects/mprpc/src/include/mprpcconfig.h:
+
+/home/rodgergraser7u/projects/mprpc/src/include/logger.h:
+
+/home/rodgergraser7u/projects/mprpc/src/include/lockqueue.h:
 
 /usr/local/include/boost/container_hash/hash_fwd.hpp:
 
@@ -931,6 +950,8 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: /home/rodgergraser7u/
 
 /usr/include/c++/9/bits/locale_facets.tcc:
 
+/usr/include/c++/9/bits/stl_queue.h:
+
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /home/rodgergraser7u/projects/mprpc/src/include/mprpcchannel.h:
@@ -1103,6 +1124,8 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: /home/rodgergraser7u/
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h:
 
+/usr/include/c++/9/deque:
+
 /usr/include/c++/9/bits/unique_lock.h:
 
 /usr/include/wchar.h:
@@ -1237,6 +1260,8 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: /home/rodgergraser7u/
 
 /usr/local/include/google/protobuf/arena_impl.h:
 
+/usr/include/c++/9/bits/stl_deque.h:
+
 /usr/include/c++/9/bits/stl_bvector.h:
 
 /usr/include/stdlib.h:
@@ -1346,6 +1371,8 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: /home/rodgergraser7u/
 /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h:
+
+/usr/include/c++/9/thread:
 
 /usr/local/include/google/protobuf/repeated_ptr_field.h:
 

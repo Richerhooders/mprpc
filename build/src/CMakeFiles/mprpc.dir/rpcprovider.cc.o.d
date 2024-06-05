@@ -290,4 +290,10 @@ src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: \
  /home/rodgergraser7u/projects/mprpc/src/include/mprpccontroller.h \
  /home/rodgergraser7u/projects/mprpc/src/include/rpcheader.pb.h \
  /usr/local/include/google/protobuf/extension_set.h \
- /usr/include/c++/9/cassert
+ /usr/include/c++/9/cassert \
+ /home/rodgergraser7u/projects/mprpc/src/include/logger.h \
+ /home/rodgergraser7u/projects/mprpc/src/include/lockqueue.h \
+ /usr/include/c++/9/queue /usr/include/c++/9/deque \
+ /usr/include/c++/9/bits/stl_deque.h /usr/include/c++/9/bits/deque.tcc \
+ /usr/include/c++/9/bits/stl_queue.h /usr/include/c++/9/thread \
+ /usr/include/c++/9/condition_variable

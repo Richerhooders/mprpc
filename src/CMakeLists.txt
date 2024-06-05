@@ -5,7 +5,8 @@ set(SRC_LIST mprpcapplication.cc
              rpcheader.pb.cc 
              rpcprovider.cc 
              mprpcchannel.cc 
-             mprpccontroller.cc)
+             mprpccontroller.cc
+             logger.cc)
 # 添加共享库
 add_library(mprpc ${SRC_LIST})
 target_link_libraries(mprpc muduo_net muduo_base pthread)

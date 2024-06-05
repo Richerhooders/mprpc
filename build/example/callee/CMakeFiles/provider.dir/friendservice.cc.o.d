@@ -287,4 +287,10 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: \
  /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /usr/include/x86_64-linux-gnu/bits/in.h
+ /usr/include/x86_64-linux-gnu/bits/in.h \
+ /home/rodgergraser7u/projects/mprpc/src/include/logger.h \
+ /home/rodgergraser7u/projects/mprpc/src/include/lockqueue.h \
+ /usr/include/c++/9/queue /usr/include/c++/9/deque \
+ /usr/include/c++/9/bits/stl_deque.h /usr/include/c++/9/bits/deque.tcc \
+ /usr/include/c++/9/bits/stl_queue.h /usr/include/c++/9/thread \
+ /usr/include/c++/9/condition_variable
