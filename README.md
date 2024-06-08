@@ -1,6 +1,5 @@
-# Mprpc
+# Mprpc：分布式网络通信框架 
 Distributed Network Communication Framework  
-mprpc分布式网络通信框架 
 
 bin: 可执行文件  
 build：cmake构建的编译中间文件  
